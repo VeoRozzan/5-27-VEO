@@ -7,16 +7,26 @@
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                <a class="nav-link{{ ( $title === 'Home') ? 'active' : '' }}" aria-current="page" href="/">Home</a>
+                    <a class="nav-link {{ ( $title === 'Home') ? 'active' : '' }}" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link{{ ( $title === 'About') ? 'active' : '' }}" href="/about">About</a>
+                    <a class="nav-link {{ ( $title === 'About') ? 'active' : '' }}" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link{{ ( $title === 'Home') ? 'gallery' : '' }}" href="/gallery">Gallery</a>
+                    <a class="nav-link {{ ( $title === 'Gallery') ? 'active' : '' }}" href="/gallery">Gallery</a>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link {{ ( $title === 'Contacts') ? 'active' : '' }}" href="/contacts">Contact Us</a>
+                </li>
             </ul>
-            </div>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route ('login')}}">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-1ink" href="{{route ('register')}}">Register</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
